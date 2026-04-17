@@ -18,7 +18,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  res.send(JSON.stringify(namesArr));
+  res.json({ names: namesArr });
 });
 
 app.listen(3000, () => {
