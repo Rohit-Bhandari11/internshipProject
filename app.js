@@ -7,6 +7,8 @@ const namesArr = ["Rohit", "Sanjeev", "Nitish"];
 
 mongoose.connect("mongodb://127.0.0.1:27017/internPractice").then(() => {
   console.log("database connected");
+}).catch(() => {
+  console.log("Error occured while connecting")
 });
 
 app.get("/", (req, res) => {
